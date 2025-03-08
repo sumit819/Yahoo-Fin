@@ -17,7 +17,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
   imports:[FormsModule ,CommonModule, HttpClientModule,MatFormFieldModule, AgGridModule, MatTableModule,MatPaginatorModule,MatSortModule,MatButtonModule ]
 })
 export class AppComponent implements AfterViewInit{
-  apiUrl:string= "http://localhost:5000"
+  apiUrl:string= "https://yahoo-backend-eke5bqgya4bcfbbs.canadacentral-01.azurewebsites.net/"
   @ViewChild('lineChart', { static: false }) lineChartContainer!: ElementRef;
   @ViewChild('barChart', { static: false }) barChartContainer!: ElementRef;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
